@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic sans ms", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
+.error {
+  font-size: 14px;
+  font-weight: 600;
+  color: red;
+}
+
+.app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.button {
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
   color: white;
+  background-color: #55acee;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 200ms;
 }
 
-.App-link {
-  color: #61dafb;
+.button:active {
+  transform: translateY(2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  width: fit-content;
+  height: fit-content;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fafafa;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #f1f1f1;
+}
+
+.icon svg,
+.icon img {
+  height: 16px;
+  width: 16px;
 }
